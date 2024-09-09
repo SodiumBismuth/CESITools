@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bfab8d6-28ea-440b-a1af-e66a0293504d" name="Changes" comment="Lecteur de notes">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CESITools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CESITools.iml" afterDir="false" />
+    <list default="true" id="7bfab8d6-28ea-440b-a1af-e66a0293504d" name="Changes" comment="added requirements.txt file">
+      <change afterPath="$PROJECT_DIR$/res/editeur.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/notes.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accueil.py" beforeDir="false" afterPath="$PROJECT_DIR$/Accueil.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Shell Script.Run Server.executor": "Run",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/33769/PycharmProjects/CESITools/requirements.txt",
+    "last_opened_file_path": "C:/Users/33769/PycharmProjects/CESITools/res",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +71,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\33769\PycharmProjects\CESITools\res" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\33769\PycharmProjects\CESITools\pages" />
       <recent name="C:\Users\33769\PycharmProjects\CESITools" />
@@ -108,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725793311024</updated>
-      <workItem from="1725793312414" duration="30372000" />
+      <workItem from="1725793312414" duration="32961000" />
     </task>
     <task id="LOCAL-00001" summary="Lecteur de notes">
       <option name="closed" value="true" />
@@ -118,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725826045599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added requirements.txt file">
+      <option name="closed" value="true" />
+      <created>1725827354254</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725827354254</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +149,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lecteur de notes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lecteur de notes" />
+    <MESSAGE value="added requirements.txt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added requirements.txt file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CESITools$test.coverage" NAME="test Coverage Results" MODIFIED="1725807850984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
