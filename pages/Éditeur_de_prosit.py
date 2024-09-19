@@ -9,6 +9,13 @@ st.info("Il est possible d'utiliser le markdown ! https://www.markdownguide.org/
 
 titre = st.text_input("Titre du prosit")
 
+a,b,c,d = st.columns(4)
+
+secretaire = a.text_input("Nom du secrétaire")
+scribe = b.text_input("Nom du scribe")
+animateur = c.text_input("Nom de l'animateur")
+gestionnaire = d.text_input("Nom du gestionnaire")
+
 prosit_steps = [
     "Mots Clés",
     "Contexte",
@@ -28,26 +35,26 @@ with kw:
     keywords = st_tags(label="Entrez vos mots clés ici", text="Appuyez sur entrée pour ajouter un nouveau mot")
 
 with ctx:
-    context = st.text_area("Entrez votre/vos contexte(s) ici", height=475)
+    context = st.text_area("Entrez votre/vos contexte(s) ici", height=250)
 
 with pb:
     problematic = st.text_input("Entrez la problématique")
 
 with ct:
-    constraints = st.text_area("Insérez vos contraintes ici", height=475)
+    constraints = st.text_area("Insérez vos contraintes ici", height=250)
 
 with gn:
     generalization = st_tags(label="Entrez vos mots de généralisation ici",
                              text="Appuyez sur entrée pour ajouter un nouveau mot")
 
 with lv:
-    deliverable = st.text_area("Insérez ce que le livrable devra contenir ici", height=475)
+    deliverable = st.text_area("Insérez ce que le livrable devra contenir ici", height=250)
 
 with ps:
-    solution = st.text_area("Insérez les pistes de solutions ici", height=475)
+    solution = st.text_area("Insérez les pistes de solutions ici", height=250)
 
 with pa:
-    action_plan = st.text_area("Insérez votre plan d'action ici", height=475)
+    action_plan = st.text_area("Insérez votre plan d'action ici", height=250)
 
 
 # Fonction pour générer le PDF
@@ -59,6 +66,10 @@ def generate_pdf():
     with open("template.txt", 'r',encoding="utf-8") as f:
         md_content = f.read().format(
             titre,
+            secretaire,
+            scribe,
+            animateur,
+            gestionnaire,
             f_keywords,
             context,
             problematic,
