@@ -5,6 +5,8 @@ from markdown_pdf import Section
 
 st.title('Éditeur de prosit')
 
+st.info("Il est possible d'utiliser le markdown ! https://www.markdownguide.org/cheat-sheet/")
+
 titre = st.text_input("Titre du prosit")
 
 prosit_steps = [

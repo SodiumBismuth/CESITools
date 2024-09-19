@@ -15,5 +15,5 @@ with notes:
 with prosit:
     st.header('Éditeur de prosit')
     st.image('res/editeur.png',width=100)
-    st.write("L'éditeur de prosit permet de créer de A à Z un PDF prêt à être envoyé du prosit aller en cours.")
+    st.markdown("L'éditeur de prosit permet de créer de A à Z un PDF prêt à être envoyé du prosit aller en cours. **Il supporte en plus le markdown !**")
     st.page_link('pages/Éditeur_de_prosit.py',label='Y aller',icon=':material/arrow_forward:')

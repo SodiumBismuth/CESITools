@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bfab8d6-28ea-440b-a1af-e66a0293504d" name="Changes" comment="Prosit Editor">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="7bfab8d6-28ea-440b-a1af-e66a0293504d" name="Changes" comment="Update template.txt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Accueil.py" beforeDir="false" afterPath="$PROJECT_DIR$/Accueil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Éditeur_de_prosit.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Éditeur_de_prosit.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725793311024</updated>
       <workItem from="1725793312414" duration="37419000" />
-      <workItem from="1726659425139" duration="13406000" />
+      <workItem from="1726659425139" duration="13834000" />
     </task>
     <task id="LOCAL-00001" summary="Lecteur de notes">
       <option name="closed" value="true" />
@@ -144,7 +146,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726738253902</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Forgot requirement">
+      <option name="closed" value="true" />
+      <created>1726738378356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726738378357</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update template.txt">
+      <option name="closed" value="true" />
+      <created>1726738565661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726738565661</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,7 +184,9 @@
     <MESSAGE value="added requirements.txt file" />
     <MESSAGE value="Added decorations to the site" />
     <MESSAGE value="Prosit Editor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prosit Editor" />
+    <MESSAGE value="Forgot requirement" />
+    <MESSAGE value="Update template.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update template.txt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CESITools$test.coverage" NAME="test Coverage Results" MODIFIED="1725807850984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
