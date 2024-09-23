@@ -7,14 +7,6 @@ st.title('Éditeur de prosit')
 
 st.info("Il est possible d'utiliser le markdown ! https://www.markdownguide.org/cheat-sheet/")
 
-titre = st.text_input("Titre du prosit")
-
-a,b,c,d = st.columns(4)
-
-secretaire = a.text_input("Nom du secrétaire")
-scribe = b.text_input("Nom du scribe")
-animateur = c.text_input("Nom de l'animateur")
-gestionnaire = d.text_input("Nom du gestionnaire")
 
 prosit_steps = [
     "Mots Clés",
@@ -30,6 +22,14 @@ prosit_steps = [
 kw, ctx, pb, ct, gn, lv, ps, pa = st.tabs(prosit_steps)
 
 # mots clés
+
+titre = st.text_input("Titre du prosit")
+
+a, b, c, d = st.columns(4)
+secretaire = a.text_input("Nom du secrétaire")
+scribe = b.text_input("Nom du scribe")
+animateur = c.text_input("Nom de l'animateur")
+gestionnaire = d.text_input("Nom du gestionnaire")
 
 with kw:
     keywords = st_tags(label="Entrez vos mots clés ici", text="Appuyez sur entrée pour ajouter un nouveau mot")
@@ -98,6 +98,6 @@ if st.button("Generate PDF"):
     st.download_button(
         label="Download PDF",
         data=pdf_buffer,
-        file_name=f"{titre}.pdf",
+        file_name=f"{titre if titre != '' else 'untitled'}.pdf",
         mime="application/pdf"
     )
