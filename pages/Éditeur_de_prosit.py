@@ -18,18 +18,14 @@ prosit_steps = [
     "Pistes de solution",
     "Plan D'action"
 ]
-
-kw, ctx, pb, ct, gn, lv, ps, pa = st.tabs(prosit_steps)
-
-# mots clés
-
 titre = st.text_input("Titre du prosit")
-
 a, b, c, d = st.columns(4)
 secretaire = a.text_input("Nom du secrétaire")
 scribe = b.text_input("Nom du scribe")
 animateur = c.text_input("Nom de l'animateur")
 gestionnaire = d.text_input("Nom du gestionnaire")
+
+kw, ctx, pb, ct, gn, lv, ps, pa = st.tabs(prosit_steps)
 
 with kw:
     keywords = st_tags(label="Entrez vos mots clés ici", text="Appuyez sur entrée pour ajouter un nouveau mot")
