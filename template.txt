@@ -1,7 +1,5 @@
 # {}
 
-#### Secrétaire : {} - Scribe : {} - Animateur : {} - Gestionnaire : {}
-
 ## Mots clés
 
 {}

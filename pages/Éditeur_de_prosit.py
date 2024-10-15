@@ -19,11 +19,6 @@ prosit_steps = [
     "Plan D'action"
 ]
 titre = st.text_input("Titre du prosit")
-a, b, c, d = st.columns(4)
-secretaire = a.text_input("Nom du secrétaire")
-scribe = b.text_input("Nom du scribe")
-animateur = c.text_input("Nom de l'animateur")
-gestionnaire = d.text_input("Nom du gestionnaire")
 
 kw, ctx, pb, ct, gn, lv, ps, pa = st.tabs(prosit_steps)
 
@@ -55,6 +50,9 @@ with pa:
 
 # Fonction pour générer le PDF
 def generate_pdf():
+    global titre
+    if titre is None or titre =="":
+        titre = "untitled"
     # mise en forme des listes
     f_keywords = " - " + "\n - ".join(keywords)
     f_generalization = " - " + "\n - ".join(generalization)
@@ -62,10 +60,6 @@ def generate_pdf():
     with open("template.txt", 'r',encoding="utf-8") as f:
         md_content = f.read().format(
             titre,
-            secretaire,
-            scribe,
-            animateur,
-            gestionnaire,
             f_keywords,
             context,
             problematic,
@@ -83,6 +77,17 @@ def generate_pdf():
     pdf.writer.close()
     return pdf.out_file
 
+infosup_v = [
+    "Date",
+    "Heure du début",
+    "Heure de fin",
+    "Durée du prosit",
+    "Rôles",
+]
+with st.expander("Informations supplémentaires"):
+    infosup = st.multiselect("Informations supplémentaires",infosup_v,placeholder="Choisissez des informations à "
+                                                                                  "rajouter (laisser vide pour ne pas"
+                                                                                  " mettre d'infos supplémentaires)")
 
 if st.button("Generate PDF"):
     # Générer le PDF
