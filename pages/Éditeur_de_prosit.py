@@ -55,6 +55,9 @@ with pa:
 
 # Fonction pour générer le PDF
 def generate_pdf():
+    global titre
+    if titre is None or titre == "":
+        titre = "untitled"
     # mise en forme des listes
     f_keywords = " - " + "\n - ".join(keywords)
     f_generalization = " - " + "\n - ".join(generalization)
@@ -94,6 +97,6 @@ if st.button("Generate PDF"):
     st.download_button(
         label="Download PDF",
         data=pdf_buffer,
-        file_name=f"{titre if titre != '' else 'untitled'}.pdf",
+        file_name=f"{titre}.pdf",
         mime="application/pdf"
     )
